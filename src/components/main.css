@@ -1,0 +1,41 @@
+:root{
+    --primary-color:#191919;
+    --secondary-color:#ff7043;
+    --primary-text-color:#e0e0e0;
+    --secondary-text-color:rgba(0, 0, 0, 0.801);
+    --color-light-green:rgba(0, 128, 0, 0.801);
+    --color-light-gray:rgba(211, 211, 211, 0.308);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--primary-text-color);
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 2.6rem;
+}
+.text-secondary{
+    font-size: 1.8rem;
+}
+h4{
+    font-size: 2.2rem;
+}
+h5{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.8rem;
+}

@@ -1,0 +1,167 @@
+@import url('../main.css');
+.navbar{
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    padding:2rem 1.5rem;
+}
+.navbar .header-container{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navbar .header-container .logo{
+    flex:1;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.navbar .header-container li.logo:hover{
+    color: var(--secondary-color);
+}
+.navbar .header-container div.nav-icons{
+    display: inline-flex;
+}
+.navbar .header-container div.nav-icons a{
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    position: relative;
+}
+.navbar .header-container div.nav-icons a:hover{
+    color: var(--secondary-color);
+}
+.navbar .header-container .search-bar{
+    height:4rem;
+    display: flex;
+    border-radius: 4px;
+}
+.navbar .header-container .search-icon{
+    flex:1;
+    display: flex;
+    height:4rem;
+    width:4rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    background-color: var(--primary-text-color);
+    border-radius: 0 4px 4px 0; 
+}
+.navbar .header-container .search-icon:hover{
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color);
+}
+.navbar .header-container .search-bar input{
+    height: 100%;
+    width:30rem;
+    border: none;
+    outline: none;
+    font-size: 2.2rem;
+    padding: 5px;
+    color: var(--secondary-text-color);
+    border-radius: 4px 0 0 4px;  
+}
+.nav-icons{
+    flex:1;
+    justify-content: flex-end;
+}
+.navbar .header-container .responsive-icons{
+    display: none;
+}
+.navbar .header-container .responsive-icons .icons{
+    padding-right: 1rem;
+}
+.navbar .header-container .responsive-icons a:hover{
+    color: var(--secondary-color);
+}
+.items-quant{
+    position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    border:1px solid var(--primary-text-color);
+    border-radius: 50%;
+    height:2.2rem;
+    width: 2.2rem;
+    right:8px;
+}
+.hamburger-menu{
+    font-size: 1.5rem;
+    display: none;
+}
+#click{
+    display: none;
+}
+@media screen and (max-width: 1052px){
+    .navbar{
+        padding: 2.5rem 1rem 2.5rem 1rem;
+    }
+    .navbar .header-container li.logo{
+        font-size: 3.4rem;
+    }
+    .navbar .header-container div.nav-icons{
+        display: none;
+    }
+    .navbar .header-container .responsive-icons{
+        display: block;
+        position: fixed;
+        top:8rem;
+        left:-100%;
+        height:100vh;
+        width:50%;
+        text-align: center;
+        background-color: var(--primary-color);
+        transition: all 0.8s ease;
+        z-index: 1;
+    }
+    #click:checked ~ .responsive-icons{
+        left: 0%;
+    }
+    #click:checked ~ .menu-btn .hamburger-menu:before{
+        content: "\f00d";
+    }
+    .navbar .header-container .search-bar input{
+        display: none;
+    }
+    .navbar .header-container .search-icon{
+        background-color: var(--primary-color);
+        color: var(--primary-text-color);
+        padding: 0 4rem;
+        font-size: 2.8rem;
+    }
+    .navbar .header-container .search-icon:hover{
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+    }
+    .hamburger-menu{
+        display: block;
+        font-size: 3rem;
+    }
+    .navbar .header-container .responsive-icons li{
+        margin: 3rem 0;
+        z-index: 1;
+    }
+    .navbar .header-container .responsive-icons li a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: var(--primary-text-color);
+    }
+}
+@media screen and (max-width:460px) {
+    .navbar{
+        padding: 2.5rem 1rem 2.5rem 1rem;
+    }
+    .navbar .header-container li.logo{
+        font-size: 3.4rem;
+    }   
+    .hamburger-menu{
+        font-size: 3rem;
+    }
+}
+    

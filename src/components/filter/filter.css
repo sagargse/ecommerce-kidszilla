@@ -1,0 +1,38 @@
+@import url('../../routes/productpage/productPage.css');
+.filter-header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.clear-btn{
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+}
+.clear-btn:hover{
+    color: var(--secondary-color);
+}
+.sort-by-category{
+    display: flex;
+    gap:2rem;
+}
+.filter-body-container .sort-by-price {
+    display: flex;
+    gap:2rem;
+}
+.sort-body-container,.category-body-container,.filtertype-body-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    gap: 1rem;
+}
+.sort-by-price,.sort-by-category,.sort-by-filter{
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding:0.5rem;
+}
+.sort-by-filter{
+    display: flex;
+    justify-content:space-between;
+}

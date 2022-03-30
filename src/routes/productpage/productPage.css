@@ -1,0 +1,40 @@
+@import url('/src/styles/main.css');
+.product-grid-container{
+    display: grid;
+    max-width: 100vw;
+    grid-template-areas: 
+    "header header header header"
+    "aside main main main"
+    "footer footer footer footer"
+}
+.navbar{
+    grid-area: header;
+}
+.product-main-content{
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.left-aside-bar{
+    grid-area: aside;
+    width: 25rem;
+    height: 100%;
+    padding: 1rem;
+    color:var(--secondary-text-color);
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin:2rem 4rem;
+    gap:4rem;
+}
+.text-secondary{
+    color: var(--secondary-color);
+}
+@media screen and(max-width:1052px) {
+    .product-list{
+        flex-direction: column;
+    }
+}

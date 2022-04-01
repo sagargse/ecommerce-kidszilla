@@ -1,13 +1,14 @@
 import './homePage.css'
-import { Navbar } from "../components/navbar/Navbar"
-import { Footer } from "../components/footer/Footer"
-import { Carousel } from '../components/carousel/Carousel';
-import { CarouselProduct } from '../components/carousel/CarouselProduct';
-import home from "../../src/assets/home.png"
-export default function HomePage(){
+import { useEffect } from "react";
+import { Carousel } from '../../components/carousel/Carousel';
+import { CarouselProduct } from '../../components/carousel/CarouselProduct';
+import home from "../../assets/home.png"
+export const HomePage=()=>{
+    useEffect(()=>{
+        document.title = "KidsZilla | Home"
+      },[])
     return(
         <>
-        <Navbar/>
         <Carousel/>
         <div className="home-grid-container">
         <main className="top-home-section">
@@ -17,7 +18,6 @@ export default function HomePage(){
         </main>
         </div>
         <CarouselProduct/>
-        <Footer/>
         </>
     );
-}
+};

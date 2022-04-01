@@ -1,0 +1,18 @@
+.simple-card{
+    transition: transform 0.3s, filter 0.3s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(100%);
+}
+.simple-card:hover{
+    filter: brightness(120%);
+  transform: scale(1.1);
+}
+.card-desc-block h1{
+    font-size: 2.5rem;
+}
+.card-desc-block p{
+    font-size: 1.6rem;
+}
+.rating-container .rating-icon{
+    font-size: 1.4rem;
+}

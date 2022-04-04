@@ -22,7 +22,7 @@ export const Navbar = () =>{
             <div className="nav-icons">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/shop">Shop</Link></li>
-                <li><Link to="/"><i className="fa fa-user"></i></Link></li>
+                <li><Link to="/login"><i className="fa fa-user"></i></Link></li>
                 <li><Link to="/"><i className="fa fa-heart"></i><span className="items-quant">2</span></Link></li>
                 <li><Link to="/"><i className="fa fa-shopping-cart"></i><span className="items-quant">2</span></Link></li>
             </div>
